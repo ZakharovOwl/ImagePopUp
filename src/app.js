@@ -14,11 +14,10 @@ previews.forEach(preview =>{
         original.classList.add('open')
         //text
         
-        const originalSrc = preview.getAttribute('data-original')
-        original.src = `./assets/full/${originalSrc}`
+        const originalSrc = preview.getAttribute('data-original');
+        original.src = `./assets/full/${originalSrc}`;
         const altText = preview.alt;
         caption.textContent = altText; 
-        preview.disable = true
     })
 })
 
